@@ -8,7 +8,7 @@ LiquidCrystal lcd(8, 9, 4, 5, 6, 7); //configura los pines del shield
 Adafruit_BME280 bme; // I2C para usar solamente cuatro pines del sensor
 
 void setup() {
-    bme.begin();    
+    bme.begin(0x76);    
 
     lcd.begin(16,2);
 }
